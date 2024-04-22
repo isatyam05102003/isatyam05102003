@@ -1,0 +1,118 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0px;
+    padding: 0;
+    background-color: #333;
+}
+
+/* Style for header */
+header {
+    background-color: #333;
+    color:wheat;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    border: 1px solid black;
+    border-color: white;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    font-size: large;
+}
+/* Style for footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+.social-icons{
+    margin-top: 500px;
+
+
+}
+.image-gallery {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 200px; /* Set image width or use percentages */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: round corners */
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarge images on hover */
+    box-shadow: 0 0 15px 5px rgba(255, 255, 0, 0.7); /* Glowing effect using yellow color */
+}
+.menu1 ul li a:hover {
+    color: blue;
+    border: 1px solid green;
+    background-color: #333;
+    padding: 3px;
+}
+
+.menu1 ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+.hero {
+    text-align: center; /* Centers the contents of .hero */
+    margin-top: 20px; /* Adds some space above the social icons section */
+    padding: 20px 0; /* Adds padding around the social icons */
+}
+
+.social-icons {
+    list-style: none; /* Removes list styling */
+    padding: 0; /* Removes padding */
+    margin: 0 auto; /* Centers the list */
+    display: flex; /* Uses flexbox for layout */
+    justify-content: center; /* Centers the flex items horizontally */
+    align-items: center; /* Aligns the flex items vertically */
+    flex-wrap: wrap; /* Allows items to wrap onto next line */
+}
+
+.social-icons li {
+    margin: 5px 10px; /* Adds spacing around each icon */
+}
+
+.social-icons a {
+    color: inherit; /* Inherits the color from the parent */
+    text-decoration: none; /* Removes underline from links */
+    display: inline-block;
+}

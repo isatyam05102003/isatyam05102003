@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="AboutUs.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+.hero {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.about-us p, .blog-preview article p {
+    margin-bottom: 10px;
+}
+
+.blog-preview {
+    margin-top: 20px;
+}
+
+article {
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.nav {
+  background-color: #333; /* Change this for your desired color */
+  color: #fff; /* Change this for your desired text color */
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100; /* Set navigation bar on top of other elements */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px; 
+  margin: 0 auto; /* Center the navigation bar horizontally */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.hide {
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+    <header class="nav">
+        <div class="container">
+          <button class="menu-toggle" aria-label="Toggle Menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <nav class="menu">
+            <ul>
+              <li><a href="frontpage.html">Home</a></li>
+              <li><a href="AboutUs.html">About</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="login.html">Sign Up</a></li>
+              <li><a href="contactUs.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <br><br>
+    <div class="hero">
+        <h1>About Us</h1>
+        </div>
+    <section class="about-us">
+        <h2>How Mobify Helps You Find the Best Mobile Phone Deals</h2>
+        <p><h4>Introduction:</h4>
+
+            In the fast-paced world of mobile technology, finding the perfect smartphone that fits your needs and budget can be a daunting task. At Mobify, we streamline this process by offering an intuitive platform where you can compare prices across a variety of mobile phones from different manufacturers. Whether you're looking for the latest high-end device or a budget-friendly option, Mobify makes it easy to find the best deals. Plus, when you shop through our links, you're also supporting us thanks to the affiliate commissions we earn from retailers at no extra cost to you!
+            <br>
+        <h4>Why Compare Prices on Mobify?</h4>
+            
+            Shopping for a new smartphone involves comparing countless variables including price, features, design, and more. At Mobify, we bring all these details together in one place, allowing you to:
+            
+            View Comprehensive Comparisons: We provide detailed comparisons of features and prices from various online retailers. This means you don’t have to visit multiple sites to gather information; it’s all available on Mobify.
+            Access Real-Time Prices: Prices change frequently. Mobify ensures you get real-time information on the latest deals available across different platforms. This immediate access can be crucial during sale periods when prices are volatile.
+            Discover Exclusive Offers: Thanks to our partnerships with numerous phone retailers and brands, we often feature exclusive deals and coupons that you won't find elsewhere.
+            Make Informed Decisions: With our expert reviews and user ratings, you gain insights into how a phone performs in real life scenarios, beyond what the specs sheet says.</p>
+        <h2>How Does Mobify Work?</h2>
+        <p>Our platform is straightforward:
+
+            Search for Your Desired Phone: Start by typing in the model or brand in our search bar.
+            Compare the Prices: Browse through the list of phones that match your search criteria. We list prices from different online stores so you can compare them side-by-side.
+            Click to Buy: Once you've made your choice, click on the best deal. You'll be redirected to the retailer's website where you can make your purchase securely.
+            When you buy through Mobify, a small commission from the sale is given to us at no extra cost to you. These commissions help us keep Mobify running and continuously improving.</p>
+    </section>
+
+    <section class="blog-preview">
+        <h2>Support Us By Shopping Through Mobify</h2>
+        <button id="toggleButton">Show/Hide Posts</button>
+        <div id="blogPosts" class="hide">
+            <article>
+                <h3>Support Us:</h3>
+                <p>Every purchase you make through Mobify not only ensures you get the best deal but also supports our platform. These affiliate commissions allow us to maintain our site, expand our offerings, and continuously improve our service to bring you the most up-to-date information and deals.</p>
+            </article>
+            <article>
+                <h3>Conclusion:</h3>
+                <p>Mobify is dedicated to helping you find the perfect mobile phone while saving you time and money. Our goal is to be the most reliable and user-friendly mobile price comparison tool on the web. We are constantly evolving to adapt to new market trends and to meet the needs of our users. Remember, when you choose to purchase through our links, you are contributing to the improvement and success of Mobify. Happy shopping!</p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 MOBIFY. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+    var blogPosts = document.getElementById('blogPosts');
+    if (blogPosts.classList.contains('hide')) {
+        blogPosts.classList.remove('hide');
+    } else {
+        blogPosts.classList.add('hide');
+    }
+});
+
+    </script>
+</body>
+</html>
